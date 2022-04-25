@@ -4,11 +4,11 @@ import { db } from '../firebase.config';
 
 const Home = () => {
     const [postsList,setPostsList] = useState([]);
-    const postCollectioRef = collection(db,"posts");
+    const postCollectionRef = collection(db,"posts");
 
     useEffect(()=>{
         const getPostList = async () => {
-            const data = await getDocs(postCollectioRef);
+            const data = await getDocs(postCollectionRef);
             setPostsList(data.docs.map((doc)=>({...doc.data(),id:doc.id})));
         }
         getPostList();
