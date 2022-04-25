@@ -1,3 +1,18 @@
 .loginPage{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("./4931029.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 
+    div{
+        p{
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+    }
 }
