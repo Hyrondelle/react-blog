@@ -26,7 +26,7 @@ const Home = ({isAuth}) => {
                     <div>
                         <h3>{post.title}</h3>
                         {isAuth&&auth.currentUser.displayName===post.author.name&&
-                        <button onClick={()=>{deletePost(post.id)}}><i class="fas fa-trash-alt"></i></button>}
+                        <button onClick={()=>{deletePost(post.id)}}><i className="fas fa-trash-alt"></i></button>}
                     </div>
                     <p>{post.post}</p>
                     <h4>@{post.author.name}</h4>
