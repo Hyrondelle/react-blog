@@ -12,7 +12,7 @@ const Login = ({setIsAuth}) => {
             console.log(result)
             localStorage.setItem("isAuth",true)
             setIsAuth(true)
-            navigate("/");
+            navigate("react-blog/");
         })
         .catch((err)=>console.log(err.message))
     }
