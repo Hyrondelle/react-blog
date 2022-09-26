@@ -12,6 +12,7 @@ const CreatePost = ({isAuth}) => {
     const sendPost = async () => {
         await addDoc(postCollectioRef,{title,post,author:{name:auth.currentUser.displayName, id: auth.currentUser.uid}})
         .then(()=>{
+            window.location.pathname = "react-blog";
             navigate("/");
         })
     }

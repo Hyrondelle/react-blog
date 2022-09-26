@@ -12,7 +12,8 @@ const Login = ({setIsAuth}) => {
             console.log(result)
             localStorage.setItem("isAuth",true)
             setIsAuth(true)
-            navigate("react-blog/");
+            window.location.pathname = "react-blog";
+            navigate("/");
         })
         .catch((err)=>console.log(err.message))
     }
